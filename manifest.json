@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "GitHub Issue Reference",
+  "description": "This extension allows the user easily get the issue number and reference from an Issue or Pull Request Page.",
+  "version": "1.0",
+
+  "browser_action": {
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "storage"
+  ],"icons": {
+    "128": "icon128.png"
+  }
+}
