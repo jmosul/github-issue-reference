@@ -8,6 +8,7 @@ Simple chrome extension to copy the issue number and reference
 
 ## Install
 * Download this repo
-* Go to chrome://extensions/
-* Click "Load unpacked extension"
-* Choose download locaction
+* Go to https://chrome.google.com/webstore/detail/github-issue-reference/jhegjkiakidmhoaildpmnhklemjiedib
+* Click "Add to Chrome"
+
+And you're done!
