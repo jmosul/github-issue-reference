@@ -1,7 +1,7 @@
 function extractIssueReferenceFromUrl(url) {
   url = url.replace('https://github.com/', '');
   url = url.replace('/issues', '');
-  url = url.replace('/pulls', '');
+  url = url.replace('/pull', '');
 
   const hashIndex = url.indexOf("#");
 
@@ -49,7 +49,7 @@ chrome.contextMenus.onClicked.addListener(onClickHandler);
 chrome.runtime.onInstalled.addListener(function() {
   // Create one test item for each context type.
   const contexts = ["page", "selection", "link", "editable", "image", "video", "audio"];
-  const showForPages = ["*://github.com/*/*/issues/*", "*://github.com/*/*/pulls/*"];
+  const showForPages = ["*://github.com/*/*/issues/*", "*://github.com/*/*/pull/*"];
 
   for (let i = 0; i < contexts.length; i++) {
     const context = contexts[i];
